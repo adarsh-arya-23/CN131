@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Sharing Website</title>
+<style>
+  /* Reset CSS */
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Header styles */
+  header {
+    background-color: #3e1700d2;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Navigation styles */
+  nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  nav a:hover {
+    background-color: #555;
+  }
+
+  /* Main content styles */
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    overflow-x: auto; /* Enable horizontal scrollbar */
+    white-space: nowrap; /* Prevent line breaks */
+    display: flex; /* Display recipe boxes in a row */
+    flex-wrap: wrap; /* Allow wrapping of recipe boxes */
+    justify-content: center; /* Center the recipe boxes horizontally */
+  }
+
+  /* Recipe box styles */
+  .recipe-box {
+    width: calc(33.33% - 40px); /* Set width of recipe box */
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .recipe-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .recipe-box h3 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+  }
+
+  .recipe-box p {
+    color: #666;
+    margin: 5px 0;
+  }
+
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Recipe Sharing Website</h1>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Recipes</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+  <!-- Recipe Boxes -->
+  <div class="recipe-box">
+    <img src="https://via.placeholder.com/300x200" alt="Recipe Image">
+    <h3>Spaghetti Carbonara</h3>
+    <p>Difficulty: Easy</p>
+    <p>Prep Time: 10 mins</p>
+    <p>Cook Time: 20 mins</p>
+  </div>
+
+  <div class="recipe-box">
+    <img src="https://via.placeholder.com/300x200" alt="Recipe Image">
+    <h3>Chicken Alfredo</h3>
+    <p>Difficulty: Medium</p>
+    <p>Prep Time: 15 mins</p>
+    <p>Cook Time: 25 mins</p>
+  </div>
+
+  <!-- Add more recipe boxes here -->
+</div>
+
+<footer>
+  <p>&copy; 2024 Recipe Sharing Website - All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
